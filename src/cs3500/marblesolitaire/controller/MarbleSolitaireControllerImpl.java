@@ -62,7 +62,7 @@ public class MarbleSolitaireControllerImpl implements MarbleSolitaireController 
       while (i < 4 && !quit) {
         try {
           String userInput = scan.next();
-          if (userInput.equals("q") || userInput.equals("Q")) {
+          if ("q".equals(userInput) || "Q".equals(userInput)) {
             try {
               view.renderMessage("Game quit!\n");
             } catch (IOException e) {
